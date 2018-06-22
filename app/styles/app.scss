@@ -167,7 +167,7 @@ font-family: monospace;
 text-transform: uppercase;
 }    
 
-/*Main Content and Secondary Content */
+/*Main Content */
 
 #main h5 {
     font-size: 1rem;
@@ -186,177 +186,179 @@ text-transform: uppercase;
 
 @media screen and (max-width: 1280px) {
 
-.mainContent h2 {
-    font-size: 43px;
-}
-}
-@media screen and (max-width: 980px) {
-
-	nav#home-nav {
-    font-size: 26px;
-	}
-	#home-header div {
-    padding: 120px 0 0px 0;
-}
-	div#home-nav-sub p {
-
-    font-size: 14px;
+    .mainContent h2 {
+        font-size: 43px;
+    }
 }
 
-div#home-nav-main {
-    background-size: 400px 485px;
-}
+ @media screen and (max-width: 980px) {
 
-.mainContent h2 {
-    font-size: 27px;
-}
-.mainContent h3 {
-    padding: 0;
-}
-nav#home-nav ul {
-    font-size: 12px;
-}
-#home-nav-sub h2 {
-    background-repeat: no-repeat;
-    min-height: 500px;
-    margin-bottom: 35px;
-    background-size: 50%;
-    font-size: 3em;
-}
-div#initialDesc, div#desc2, div#desc3, div#desc4 {
-    width: 50%;
-    margin-top: 0;
-}
+        nav#home-nav {
+        font-size: 26px;
+        }
+        #home-header div {
+        padding: 120px 0 0px 0;
+    }
+        div#home-nav-sub p {
+
+        font-size: 14px;
+    }
+
+    div#home-nav-main {
+        background-size: 400px 485px;
+    }
+
+    .mainContent h2 {
+        font-size: 27px;
+    }
+    .mainContent h3 {
+        padding: 0;
+    }
+    nav#home-nav ul {
+        font-size: 12px;
+    }
+    #home-nav-sub h2 {
+        background-repeat: no-repeat;
+        min-height: 500px;
+        margin-bottom: 35px;
+        background-size: 50%;
+        font-size: 3em;
+    }
+    div#initialDesc, div#desc2, div#desc3, div#desc4 {
+        width: 50%;
+        margin-top: 0;
+    }
 
 }
 @media screen and (max-width: 768px) {
 	#home-header div {
     padding: 0;
-}
-span#borderHome {
-    border-bottom: none;
-}
-
-.home .jumbotron {
-    min-height: 0;
-    position: initial;
-    padding-bottom: 0;
-}
-.jumbotron {
-	padding: 0;
-    color: inherit;
-    background-color: transparent;
-}
-	#home-header h1:nth-child(3) {
-    padding: 30px 100px 0 36px;
-}
-	div#home-nav-sub {
-    z-index: 1;
-}
-	div#home-nav-main {
-    z-index: 2;
-    max-width: 0;
-    background-size: 445px 485px;
-}
-div#initialDesc, div#desc2, div#desc3, div#desc4 {
-    width: 50%;
-    margin-top: 250px;
-}
-#home-nav-sub h2 {
-    background-repeat: no-repeat;
-    background-position: 0px 0;
-    min-height: 400px;
-    margin-bottom: 22px;
-    background-size: 100%;
-    font-size: 56px;
-}
-
-}
-@media screen and (max-width: 360px) {
-div#home-nav-sub {
-    min-height: 0;
-	
-	}
-	nav#subnav{
-		min-width: 352px;
-	}
-nav#home-nav ul {
-    padding: 15px;
-	}
-nav#home-nav {
-    margin-bottom: 0;
     }
-   
-.container {
-    padding: 0;
-    margin: 0;
+    span#borderHome {
+        border-bottom: none;
+    }
+
+    .home .jumbotron {
+        min-height: 0;
+        position: initial;
+        padding-bottom: 0;
+    }
+    .jumbotron {
+        padding: 0;
+        color: inherit;
+        background-color: transparent;
+    }
+        #home-header h1:nth-child(3) {
+        padding: 30px 100px 0 36px;
+    }
+        div#home-nav-sub {
+        z-index: 1;
+    }
+        div#home-nav-main {
+        z-index: 2;
+        max-width: 0;
+        background-size: 445px 485px;
+    }
+    div#initialDesc, div#desc2, div#desc3, div#desc4 {
+        width: 50%;
+        margin-top: 250px;
+    }
+    #home-nav-sub h2 {
+        background-repeat: no-repeat;
+        background-position: 0px 0;
+        min-height: 400px;
+        margin-bottom: 22px;
+        background-size: 100%;
+        font-size: 56px;
+    }
+
 }
 
-#home-header div {
-    padding: 0;
-}
-
-.home .jumbotron {
-    min-height: 0;
-	margin: 0;
-    position: initial;
-    padding-bottom: 0;
-}
-.jumbotron {
-	padding: 0;
-    color: inherit;
-    background-color: transparent;
-}
-div#home-nav-main {
-    min-height: 0;
-    z-index: 0;
-    position: inherit;
-    min-width: 0;
-}
-
-span#borderHome {
-    border-bottom: none;
-    top: 0;
-}
-nav#subnav, #home-nav, div#home-nav-main {
-	min-height: 40px;
-}
-
+@media screen and (max-width: 360px) {
+    div#home-nav-sub {
+        min-height: 0;
+        
+        }
+        nav#subnav{
+            min-width: 352px;
+        }
+    nav#home-nav ul {
+        padding: 15px;
+        }
+    nav#home-nav {
+        margin-bottom: 0;
+        }
     
-div#home-nav-main ul li {
-    margin: 15px 0;
-    font-weight: 600;
-    max-width: 100%;
-}
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    #home-header div {
+        padding: 0;
+    }
+
+    .home .jumbotron {
+        min-height: 0;
+        margin: 0;
+        position: initial;
+        padding-bottom: 0;
+    }
+    .jumbotron {
+        padding: 0;
+        color: inherit;
+        background-color: transparent;
+    }
+    div#home-nav-main {
+        min-height: 0;
+        z-index: 0;
+        position: inherit;
+        min-width: 0;
+    }
+
+    span#borderHome {
+        border-bottom: none;
+        top: 0;
+    }
+    nav#subnav, #home-nav, div#home-nav-main {
+        min-height: 40px;
+    }
+
+        
+    div#home-nav-main ul li {
+        margin: 15px 0;
+        font-weight: 600;
+        max-width: 100%;
+    }
 
 
-#home-header h1:nth-child(2) {
-    font-size: 26px;
-    font-weight: 600;
-    padding: 10px 22px;
-}
-.mainContent h2 {
-	font-size: 14px;
-}
+    #home-header h1:nth-child(2) {
+        font-size: 26px;
+        font-weight: 600;
+        padding: 10px 22px;
+    }
+    .mainContent h2 {
+        font-size: 14px;
+    }
 
-.mainContent h2:nth-child(2) {
-    margin: 0;
-}
-div.title {
-    width:100%;
-}
-.mainContent h3, #news-events h3 {
-	font-size:20px
-} 
-.mainContent h4 ,
-.mainContent h5,  
-nav#home-nav{
-    font-size: 18px;
-}
+    .mainContent h2:nth-child(2) {
+        margin: 0;
+    }
+    div.title {
+        width:100%;
+    }
+    .mainContent h3, #news-events h3 {
+        font-size:20px
+    } 
+    .mainContent h4 ,
+    .mainContent h5,  
+    nav#home-nav{
+        font-size: 18px;
+    }
 
-.mainContent p {
-	margin-top: 0;
-}
+    .mainContent p {
+        margin-top: 0;
+    }
 
 
 }
