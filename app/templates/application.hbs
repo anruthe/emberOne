@@ -1,55 +1,207 @@
 <body id="main">
 <main role="main" class="home">	
-  <!-- other header -->  
-<div class="jumbotron container">   
-    <section class="main">   
-    <h1 class="display-1 text-center">Amber Rutherford</h1>
-  <!-- Small main nav -->
-   <article class="row main-nav">
-   <div class="col-sm-6 text-center">
-        {{#link-to "about"}}
-            About
-        {{/link-to}}
-    </div>
-    <div class="col-sm-6 text-center">
-        {{#link-to "about"}}
-            API Basics
-        {{/link-to}}
-    </div>   
-    </article>
-   
-    <div class="text-center">
-        {{#bs-modal-simple 
-            open=modal2 
-            title="Welcome, FiscalNote!" 
-            size="lg" 
-            onHidden=(action (mut modal1) false)}}
-        <p class="lead">This is a tech stack for Node.js, with Ember, Sass, and Bootstrap 4.</p>
-        {{/bs-modal-simple}}
-        
-    </div>
-   </section>
-  
-{{outlet}}
+	<!-- wrapper -->		
+			<!-- header -->
+			<div id="home-header" class="jumbotron container">
+				<div class="row text-left text-uppercase">			
+					<h1 class="hidden-xs col-sm-12 col-md-12">Welcome</h1>
+					<h1 class="col-xs-12 col-sm-12 col-md-12">FiscalNote<span id="borderHome"></span></h1>
+					<h1 class="hidden-xs col-sm-12 col-md-12">Because you probably want to know what I can actually do!</h1>
+				</div>
+			</div>
+			<!-- /header -->	
+			
+		<div class="container">	
 
-</div>
-<div id="welcome" class="text-center">
-{{#bs-modal-simple 
-open=modal1 title="Simple Dialog" 
-size="sm"
-fade=fade 
-onHidden=(action (mut modal1) false)}}
-  Hi there
-{{/bs-modal-simple}}
-{{#bs-button onClick=(action (mut modal1) true)}}Open Modal{{/bs-button}}
+			<!-- nav -->
+			<nav ID="home-nav" class="nav row" role="navigation">				
+				<div id="home-nav-main" class="col-xs-12 col-sm-6 col-md-6  text-uppercase">
+					<h2><span class="highlight">About</span></h2>
+                            <ul>
+                                <li id="resume">Resume</li>
+                                <li id="travel">Travel</li>
+                                <li id="family">Family</li>
+                            </ul>					
+				</div>
+				<div id="home-nav-sub" class="col-xs-12 col-sm-6 col-md-6 text-right"> 
+					<div id="initialDesc" class="col-xs-12 col-sm-12 col-md-12 pull-right">
+						I'm Amber Nichole Rutherford. 
+                        I grew up never knowing exactly what 
+                        i wanted to be. I started out wanting to be
+                        an architect, later an earth scienctist. Science 
+                        is still one of my favorite subjects, but just for studying.
+                        I ended up going into business school thinking that it would be a be fulfilling, 
+                        but it was terrible; so now I'm here, a Software Engineer.  
+                        <em>I love everything about it.</em> 							
+						<div class=" col-xs-12 col-sm-12 col-md-12 text-lowercase">
+							
+						</div>
+					</div>	
+					<div id="desc2" class="col-xs-12 col-sm-12 col-md-12 pull-right">
+						
+						<h4>EDUCATION</h4>
+                        
+                       <h5> M.S. IN INFORMATION SYSTEMS AND ASSURANCE</h5>
+                       <p> UNIVERSITY OF NEW MEXICO; CUMULATIVE GPA: 3.85</p>
+                       <h5>B.B.A. IN FINANCE</h5>
+                       <p> UNIVERSITY OF NEW MEXICO; FINAL CUMULATIVE GPA: 3.54</p>
+                        
+                        <h4>SKILLS &amp; CERTIFICATIONS</h4>
+                        <ul>
+                            <li> Active DOE L security clearance (equivalent to DoD Secret security clearance)</li>
+                            <li> Programming languages and markups: HTML, CSS/ Sass, JavaScript/JQuery, Angular, Node.Js, SQL, Velocity, PHP </li>
+                            <li> Software: SQL server, SharePoint, MS Office suite, WordPress, Cascade Server, GitLab, Grunt </li>
+                            <li> Other: Scrum/agile methodologies, software design documentation, software product lifecycle </li>
+                       </ul>
+                       <h4> EXPERIENCE</h4>
+                        
+                        <h5>SANDIA NATIONAL LABORATORIES - ALBUQUERQUE, NM FEB 2016-PRESENT</h5>
+                        
+                        <p>
+                        <strong>SOFTWARE SYSTEMS ENGINEER</strong> <br />  
+                        Working in Sandia National Lab’s service center providing Web design, development, deployment
+                        and maintenance to support Sandia’s approximately 10,000 employees</p>
+                        <ul>
+                        <li>Deliver both front and back end development utilizing PHP, Angular, Javascript/Jquery, CSS/Sass, HTML on a WordPress platform</li>
+                            <li>Work in a team using agile practices, working closely with UX, and designers over 3 week sprints. BUSINESS OWNER ALBUQUERQUE, NM MAY 2015-March 2016 IT CONTRACTOR</li>
+                            <li>Design and develop information systems architectures based on customer requirements</li>
+                            <li>Implement systems design utilizing knowledge of Point of Sales systems, database development
+                        and design, web interface systems, reporting services, and forecasting based on historical data</li>
+                        </ul>
+                        
+                       <h5>SANDIA NATIONAL LABORATORIES - ALBUQUERQUE, NM AUG 2012-FEB 2016 </h5> 
+                       <p> <strong> GRADUATE INTERN COLLABORATIVE INFORMATION ENVIRONMENTS AND BUSINESS
+                        OPERATIONS</strong></p>
+                        <ul>
+                        <li>Designed and implement IS tools to support process management, database systems, IT
+                        documentation processes, web development, programming, and all areas of information systems</li>
+                        <li>Implemented and designed tools for data organization, process management and manipulation, customer relations, budget analysis, action plan development and financial reporting
+                       </li>
+                       </ul>
+                       <h5> EL PINTO RESTAURANT </h5>
+                        <p><strong>LEAD SERVER &amp; BARTENDER - ALBUQUERQUE, NM MAY 2006-July 2014 </strong></p>
+                         <ul><li>Led and trained a team of 30 servers in a fast-paced restaurant with a seating capacity of 1,200 </li></ul>
+                       <h4> ACTIVITIES &amp; COMMUNITY INVOLVEMENT</h4>
+                       <ul>
+                            <li>2014: Director of Media for UNM chapter of ALPFA</li>
+                            <li>2013 – 2015: Contributing lesson designer and teacher for MANOS program via Sandia National
+                            Laboratories</li>
+                            <li>2012 (published): Leader of Uniform Bank Performance Report (UBPR) at UNM</li>
+						</ul>	
+					</div>
+					<div id="desc3" class="col-xs-12 col-sm-12 col-md-12 pull-right">
+						<div class="row">
+						<h2 id="colombia" class="col-xs-12 col-sm-12 col-md-12 pull-right"><span>Colombia</span></h2>
+						<h2 id="alaska" class="col-xs-12 col-sm-12 col-md-12 pull-right">Alaska</h2>
+						<h2 id="ireland"class="col-xs-12 col-sm-12 col-md-12 pull-right">Ireland</h2>
+						<h2 id="germany"class="col-xs-12 col-sm-12 col-md-12 pull-right">Germany</h2>
+						<h2 id="austria"class="col-xs-12 col-sm-12 col-md-12 pull-right">Austria</h2>
+						</div>		
+					</div>
+					<div id="desc4" class="col-xs-12 col-sm-12 col-md-12 pull-right">				
+						
+						<p>Family is one of the most important parts of my life. I am one of three girls, and I have a brother-in-law. I have a twelve year old nephew, and a neice on the way. I have many female cousins, we are all like sisters. I am very close to my family; however, many of them have moved to other states. We manage to keep close ties, no matter where we are. Also, don't forget Atticus. He's basically my kid</p>
+                            <h2 id="atticus">Atticus</h2>"
+					</div>						
+				</div>
+			</nav>
+			<!-- /nav -->
+			<!-- Section -->			
+			<!-- /section -->
+		</div>	
+		<!-- /wrapper -->	
+	</main>
 
-</div>
+</body>  
+
 <script>
-$(document).ready(function(){
-    $("#ember300").click(function(){
-        $("#welcome").hide();
+    jQuery(document).ready(function($) {
+	
+	$(function () {
+		
+		// DOM ready, take it away
+		$('.tabbed-content .tab').hide();
+		var currenttab = $('.tabs ul li a').first().attr('rel');
+		$('#'+currenttab+'-link').addClass('activeTab');
+		var clickedtab = '';
+		$('#'+currenttab).show();
+		//$('.tabbed-content .tab').first().show();
+		$('.tabs a').click(function() {
+		  clickedtab = $(this).attr('rel');
+		
+		  if (clickedtab != currenttab) {
+			  $('#'+currenttab+'-link').removeClass('activeTab');
+			  $('#'+currenttab).hide();
+			  currenttab = clickedtab;
+			  $('#'+currenttab+'-link').addClass('activeTab');
+			  $('#'+currenttab).fadeIn('normal');
+			  //$('.tabbed-content .tab').hide();
+			  //console.log(tab);
+		  }
+		});		
+		
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });	
+
+  
+$(' .tabbed-content').on('click','a.externalLink', function(e) {
+			   var url = $(this).attr('href');
+			   window.open(url); return false;
+	});
+
+function getSelectedTabId(){
+    return $("#tabs .ui-tabs-panel:visible").attr("id");
+}
+/* Hover Descriptions */
+$("#summary").hover(function() {
+    $("#initialDesc").show();
+	$("#desc2").hide();
+	$("#desc3").hide();
+	$("#desc4").hide();
+	
+
+});
+
+$("#resume").hover(function() {
+    $("#desc2").show();
+	$("#initialDesc").hide();
+	$("#desc3").hide();
+	$("#desc4").hide();
+});
+$("#travel").hover(function() {
+    $("#desc3").show();
+	$("#initialDesc").hide();
+	$("#desc2").hide();
+	$("#desc4").hide();
+});
+$("#family").hover(function() {
+    $("#desc4").show();
+	$("#initialDesc").hide();
+	$("#desc3").hide();
+	$("#desc2").hide();
+});
+/*Slider Content Show/Hide Function */
+ $(".bxslider a").click(function () {
+	 
+	 var num = $(this).attr('href');
+						
+        $(num).addClass('active');      
+    				$(num).addClass('active').siblings().removeClass('active');
+		
     });
+	
+	});
+	
 });
 </script>
-</main>
-</body>
+
